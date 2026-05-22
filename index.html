@@ -7,42 +7,92 @@
     <title>Compasso Musical - Loja de instrumentos Musicais</title>
     <!--CSS Interno-->
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .titulo{
-            color: red;
-            margin: 50px 20px 100px 150px;
-            background-color: aqua;
-            padding: 20px 50px 100px 150px;u
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
         }
+
+        h1,
+        h2,
+        h3 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .cabecalhoPrincipal {
+            background-color: #ffffff;
+            padding: 1.5rem 5%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .titulo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        .listaNavegacao {
+            display: flex;
+            gap: 2rem;
+        }
+
+            .linkNav {
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+
+            .linkNav:hover {
+                color: #d32f2f;
+            }
+
     </style>
 </head>
-
 <body>
-    <!-- Cabeçalho -->
-    <header>
+    <!-- Cabeçalho do site -->
+    <header id="header" class="cabecalhoPrincipal">
         <div id="logo">
-            <h1 class="titulo" style="color: blue;">Compasso Musical</h1>
+            <h1 class="titulo">Compasso Musical</h1>
         </div>
-        <nav>
-            <ul>
+        <nav id="nav">
+            <ul class="listaNavegacao">
                 <li>
-                    <a href="#hero">Inicio</a>
+                    <a href="#hero" class="linkNav">Inicio</a>
                 </li>
                 <li>
-                    <a href="#sobre">Sobre</a>
+                    <a href="#sobre" class="linkNav">Sobre</a>
                 </li>
                 <li>
-                    <a href="#produtos">Instrumentos</a>
+                    <a href="#instrumentos" class="linkNav">Instrumentos</a>
                 </li>
                 <li>
-                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#depoimentos" class="linkNav">Depoimentos</a>
                 </li>
                 <li>
-                    <a href="#contatos">Contato</a>
+                    <a href="#contato" class="linkNav">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -50,6 +100,7 @@
 
     <!-- Conteúdo Principal -->
     <main>
+        <!-- Seção Hero -->
         <section id="hero">
             <h2>O som da sua vida começa aqui</h2>
             <p>
@@ -76,7 +127,7 @@
         </section>
 
         <!-- Seção de Instrumentos -->
-        <section id="produtos">
+        <section id="instrumentos">
             <h2>Cátalogo</h2>
             <article>
                 <h3>Guitarra Elétrica StratoCaster</h3>
@@ -134,7 +185,7 @@
         </section>
 
         <!--Seção Contatos-->
-        <section id="contatos">
+        <section id="contato">
             <h2>Fale Conosco</h2>
             <p>
                 Tem dúvidas sobre algum instrumento? Mande uma mensagem ou venha nos visitar.
